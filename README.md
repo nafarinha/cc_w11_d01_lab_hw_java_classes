@@ -13,8 +13,8 @@ Create 3 single classes with methods to perform some functionality.
     * Divide :white_check_mark:
 
 #### Water Bottle
-* Create a water bottle class with a volume property.
-* The volume should start at 100.
+* Create a water bottle class with a volume property. :white_check_mark:
+* The volume should start at 100. :white_check_mark:
 * Add a drink function that takes 10 from the volume each time it is called.
 * Create an empty function that brings the volume down to 0.
 * Create a fill function that fills the volume back to 100.

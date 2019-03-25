@@ -14,6 +14,12 @@ public class PrinterTest {
 
     @Test
     public void getNumSheets() {
-        assertEquals(500, printer.getNumSheets());
+        assertEquals(0, printer.getNumSheets());
+    }
+
+    @Test
+    public void setNumSheets() {
+        printer.setNumSheets(200);
+        assertEquals(200, printer.getNumSheets());
     }
 }

@@ -7,10 +7,10 @@ Create 3 single classes with methods to perform some functionality.
 #### Calculator
 * Create a Calculator class. This should have functions for Add, Subtract, Multiply and Divide, each taking in two integers to perform the calculations on.
 
-* Add :white_check_mark:
-* Subtract :white_check_mark:
-* Multiply :white_check_mark:
-* Divide :white_check_mark:
+    * Add :white_check_mark:
+    * Subtract :white_check_mark:
+    * Multiply :white_check_mark:
+    * Divide :white_check_mark:
 
 #### Water Bottle
 * Create a water bottle class with a volume property.

@@ -36,4 +36,15 @@ public class PrinterTest {
         printer.refill(200);
         assertEquals(320, printer.getNumSheets());
     }
+
+    @Test
+    public void getTonerVolume() {
+        assertEquals(0, printer.getTonerVolume());
+    }
+
+    @Test
+    public void setTonerVolume() {
+        printer.setTonerVolume(1000);
+        assertEquals(1000, printer.getTonerVolume());
+    }
 }

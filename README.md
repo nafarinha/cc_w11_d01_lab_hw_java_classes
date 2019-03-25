@@ -27,5 +27,5 @@ Create 3 single classes with methods to perform some functionality.
 * Add a method to print that takes in a number of pages and number of copies. :white_check_mark:
 * The print method will only run if the printer has enough paper. If it runs it will reduce the value of the paper left by number of copies * number of pages. :white_check_mark:
 * Create a method to refill the printer paper. :white_check_mark:
-* Add a toner volume property to the class.
+* Add a toner volume property to the class. :white_check_mark:
 * Modify the printer so that it reduces the toner by 1 for each page printed.

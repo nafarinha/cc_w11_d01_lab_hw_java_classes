@@ -1,5 +1,6 @@
 public class Printer {
     private int numSheets = 0;
+    private int tonerVolume = 0;
 
     public Printer() {
     }
@@ -10,6 +11,14 @@ public class Printer {
 
     public void setNumSheets(int newSheets) {
         this.numSheets = newSheets;
+    }
+
+    public int getTonerVolume() {
+        return this.tonerVolume;
+    }
+
+    public void setTonerVolume(int newPageYield) {
+        this.tonerVolume += newPageYield;
     }
 
     public void print(int pages, int copies) {

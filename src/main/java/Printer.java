@@ -21,10 +21,19 @@ public class Printer {
         this.tonerVolume += newPageYield;
     }
 
+//    public void print(int pages, int copies) {
+//        int printingQueue = pages * copies;
+//        if (numSheets >= printingQueue) {
+//            this.numSheets -= printingQueue;
+//        }
+//    }
+
+    //refactored to cater for toner volume property
     public void print(int pages, int copies) {
         int printingQueue = pages * copies;
-        if (numSheets >= printingQueue) {
+        if (this.numSheets >= printingQueue && this.tonerVolume >= printingQueue) {
             this.numSheets -= printingQueue;
+            this.tonerVolume -= printingQueue;
         }
     }
 

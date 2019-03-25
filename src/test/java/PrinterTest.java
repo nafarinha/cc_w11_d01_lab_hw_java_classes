@@ -23,11 +23,37 @@ public class PrinterTest {
         assertEquals(200, printer.getNumSheets());
     }
 
+//    @Test
+//    public void print() {
+//        printer.setNumSheets(500);
+//        printer.print(2,5);
+//        assertEquals(490, printer.getNumSheets());
+//    }
+
+    //refactored test for print fn to cater for toner volume
     @Test
     public void print() {
+        printer.setNumSheets(100);
+        printer.setTonerVolume(150);
+        printer.print(45, 2);
+        assertEquals(10, printer.getNumSheets());
+        assertEquals(60, printer.getTonerVolume());
+    }
+
+    @Test
+    public void printNotEnoughSheets() {
+        printer.setNumSheets(100);
+        printer.setTonerVolume(200);
+        printer.print(50, 5);
+        assertEquals(100, printer.getNumSheets());
+    }
+
+    @Test
+    public void printNotEnoughToner() {
         printer.setNumSheets(500);
-        printer.print(2,5);
-        assertEquals(490, printer.getNumSheets());
+        printer.setTonerVolume(200);
+        printer.print(50, 5);
+        assertEquals(200, printer.getTonerVolume());
     }
 
     @Test
@@ -47,4 +73,5 @@ public class PrinterTest {
         printer.setTonerVolume(1000);
         assertEquals(1000, printer.getTonerVolume());
     }
+
 }

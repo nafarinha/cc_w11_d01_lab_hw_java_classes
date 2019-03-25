@@ -17,7 +17,7 @@ Create 3 single classes with methods to perform some functionality.
 * The volume should start at 100. :white_check_mark:
 * Add a drink function that takes 10 from the volume each time it is called. :white_check_mark:
 * Create an empty function that brings the volume down to 0. :white_check_mark:
-* Create a fill function that fills the volume back to 100.
+* Create a fill function that fills the volume back to 100. :white_check_mark:
 
 ## Extension:
 

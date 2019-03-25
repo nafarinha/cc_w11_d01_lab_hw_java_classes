@@ -8,4 +8,10 @@ public class WaterBottle {
     public int getVolume() {
         return this.volume;
     }
+
+    public void drink() {
+        if (this.volume > 0) {
+            this.volume -= 10;
+        }
+    }
 }

@@ -16,4 +16,9 @@ public class CalculatorTest {
     public void add() {
         assertEquals(3, calculator.add(1,2), 0.01);
     }
+
+    @Test
+    public void substract() {
+        assertEquals(-1, calculator.subtract(1, 2), 0.01);
+    }
 }

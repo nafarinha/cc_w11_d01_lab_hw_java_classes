@@ -29,4 +29,11 @@ public class PrinterTest {
         printer.print(2,5);
         assertEquals(490, printer.getNumSheets());
     }
+
+    @Test
+    public void refill() {
+        printer.setNumSheets(120);
+        printer.refill(200);
+        assertEquals(320, printer.getNumSheets());
+    }
 }

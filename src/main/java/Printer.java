@@ -19,4 +19,8 @@ public class Printer {
         }
     }
 
+    public void refill(int newSheets) {
+        this.numSheets += newSheets;
+    }
+
 }
